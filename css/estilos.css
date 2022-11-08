@@ -1,0 +1,57 @@
+body{
+    width: auto;
+}
+header{
+    position: relative;
+    height: 200px;
+    padding: 0 10% 0 10%;
+}
+h1{
+    margin: 0;
+}
+#logo{
+    position: absolute;
+}
+#credentials{
+    position: absolute;
+    top: 0;
+    right: 10%;
+   
+}
+
+#credentials ul li{
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px;
+}
+
+#credentials ul li a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+#header_navigation{
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+#header_navigation ul li{
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px;
+    background-color:rgb(209, 209, 209);
+    border-radius: 5%;
+}
+
+#header_navigation ul li a{
+    
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+header h1{
+    position: absolute;
+    bottom: 15%;
+}
