@@ -4,7 +4,8 @@ body{
 header{
     position: relative;
     height: 200px;
-    padding: 0 10% 0 10%;
+    width: 80%;
+    margin: 0 10% 0 10%;
 }
 h1{
     margin: 0;
@@ -15,7 +16,7 @@ h1{
 #credentials{
     position: absolute;
     top: 0;
-    right: 10%;
+    right: 0;
    
 }
 
@@ -28,30 +29,68 @@ h1{
 #credentials ul li a{
     display: inline-block;
     text-decoration: none;
+    color: black;
 }
 
 #header_navigation{
     position: absolute;
     top: 20%;
-    right: 10%;
+    right: 0;
 }
 
 #header_navigation ul li{
     display: inline-block;
     text-align: center;
-    padding: 0 20px;
+    margin: 0 10px;
+    padding: 0 10px;
     background-color:rgb(209, 209, 209);
     border-radius: 5%;
+
 }
 
 #header_navigation ul li a{
     
     display: inline-block;
     text-decoration: none;
+    font-size: 30px;
+    color: black;
     
 }
 
 header h1{
     position: absolute;
     bottom: 15%;
+    font-size: 50px;
+    color: darkcyan;
 }
+
+#navegacion{
+    float:left;
+    width:100%;
+    background:yellow;
+    font-size:93%;
+    line-height:normal;
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+
+#navegacion ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+#navegacion li{
+    float:left;
+    margin:0;
+    padding:0 0 0 9px;
+}
+
+#navegacion a{
+    display:block;
+    padding:5px 15px 4px 6px;
+    float:left;
+    text-decoration: none;
+    color: black;
+}
+
