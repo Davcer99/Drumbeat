@@ -1,3 +1,67 @@
+/* cambios sobre todo el documento  */
+/* definimos los grid areas */
+.Header {grid-area: header;}
+.contenido {grid-area: contenido;}
+.Aside {grid-area: aside;}
+.Footer {grid-area: footer;}
+
+
+.container {
+    display: grid;
+    margin-left: 24%;
+    margin-right: 24%;
+    padding: 10px;
+    grid-template-areas: 
+    'header header header header header header'
+    'contenido contenido contenido contenido aside aside'
+    'footer footer footer footer footer footer ';
+}
+/* En este se aplica a todo el documento */
+* {
+	margin: 0;
+    padding: 0;
+}
+
+.container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+}
+/* fin de los cambios sobre todo el documento */
+
+/* cabecera */
+/* definimos los grid areas */
+.Logo {grid-area: logo;}
+.menuPrincipal {grid-area: menuPrincipal;}
+.titulos {grid-area: titulos;}
+.menuSecundario {grid-area: menuSecundario;}
+
+.Logo {
+    padding-right: 100px;
+}
+
+.Logo > img {
+    float: left;
+}
+
+.Header {
+    display: grid;
+    grid-template-areas:
+    'logo logo menuPrincipal menuPrincipal menuPrincipal menuPrincipal'
+    'titulos titulos titulos titulos titulos titulos'
+    'menuSecundario menuSecundario menuSecundario menuSecundario menuSecundario menuSecundario';
+    background-color: #2196F3;
+}
+
+.Header > div {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menuPrincipal {
+    display: grid;
+}
 
 .credentials a {
     float: right;
@@ -10,6 +74,7 @@
     text-decoration: none;
     color: #000;
     border-radius: 5px;
+    margin-top: 20px;
 }
 
 .credentials ul {
@@ -45,15 +110,12 @@
     float: right;
 }
 
-#titulo {
+.titulos h1 {
     text-align: justify;
     color: #077782;
 }
 
 /* menu secundario */
-.menuSecundario{
-    margin: 20px 0 20px 0;
-}
 .menuSecundario a {
     text-align: center;
     color: #000;
@@ -237,18 +299,24 @@ input.checkFormulario+label {
 
 /* aside */
 
-#Aside > div{
+.Aside {
+    display: grid;
+    grid-template-rows: 130px 220px 470px 1fr 1fr;
+    grid-template-columns: 340px;
+}
+
+.Aside > div{
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
 }
 
-#Aside .Register {
+.Aside .Register {
     background-color: #99cdff;
     border-radius: 10px;
 }
 
-#Aside .Register > button {
+.Aside .Register > button {
     height: 70px;
     width: 300px;
     font-size: 16px;
@@ -260,7 +328,7 @@ input.checkFormulario+label {
     border: none;
 }
 
-#Aside .Register > p {
+.Aside .Register > p {
     color:#0077EE;
 }
 
@@ -383,30 +451,30 @@ input.checkFormulario+label {
 
 /* footer */
 
-#Footer {
+.Footer {
     display: flex;
 }
 
-#Footer > div {
+.Footer > div {
     background-color: #7a7771;
     text-align: center;
     padding: 20px 0;
 }
 
-#Footer ul {
+.Footer ul {
     list-style: none;
     margin-left: 50px;
     margin-right: 50px;
 }
 
-#Footer ul li {
+.Footer ul li {
     margin: 0 auto;
     clear: both;
     display: flex;
     margin-top: 10px;
 }
 
-#Footer ul li > p{
+.Footer ul li > p{
     color: #fff;
     margin-left: 10px;
     width: 100px;
